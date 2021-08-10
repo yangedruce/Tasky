@@ -1,0 +1,40 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #0C0B0B;
+}
+
+.ff-baloo {
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.ff-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.custom-form {
+    border: 3px solid #0C0B0B;
+    border-radius: 5px;
+}
+
+.auth {
+    @media (min-width: 992px) {
+        height: 100vh;
+    }
+
+    &.auth-start {
+        .auth-start-bg {
+            background-color: #FDF360;
+            border-bottom-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+
+            @media (min-width: 992px) {
+                border-top-right-radius: 50px;
+                border-bottom-left-radius: 0;
+            } 
+        }
+    }
+
+    .auth-content {
+        z-index: 100;
+    }
+}
