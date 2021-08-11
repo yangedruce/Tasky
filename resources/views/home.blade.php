@@ -1,11 +1,14 @@
-@extends('layouts.app')
+@extends('layouts.app-dashboard')
 
 @section('title')
 {{ __('Home') }}
 @endsection
 
 @section('content')
-<h1 class="text-center display-5 my-5"><a href="{{ url('/') }}" class="text-decoration-none link-dark">{{ __("Forstrap") }}</a></h1>
+jojo
+
+
+{{-- <h1 class="text-center display-5 my-5"><a href="{{ url('/') }}" class="text-decoration-none link-dark">{{ __("Forstrap") }}</a></h1>
 <div class="row justify-content-center">
     <div class="col-lg-5">        
         <div class="card mb-3">
@@ -40,5 +43,5 @@
             <div class="alert alert-success">{{ session('status') }}</div>
         @endif
     </div>
-</div>
+</div> --}}
 @endsection

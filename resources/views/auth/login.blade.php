@@ -6,13 +6,13 @@
 
 @section('content')
 <div class="row g-0">
-    <div class="col-lg-7 auth auth-start position-relative">
+    <div class="col-xl-7 auth auth-start position-relative">
         <div class="position-absolute w-100 h-100 auth-start-bg"></div>
-        <div class="p-3 mx-5 mt-5 auth-content position-relative">
-            <h1 class="display-1 ff-baloo">Task manager for<br class="d-sm-block d-none"> small teams</h1>
-            <p class="mb-5 ff-roboto">Tasky is a simple to-do list for small companies or teams<br class="d-sm-block d-none"> who work on daily scrums and have regular stand-ups! :)</p>
+        <div class="mx-5 mt-5 auth-content position-relative">
+            <h1 class="display-1 ff-baloo">Task manager for<br class="d-xl-block d-none"> small teams</h1>
+            <p class="mb-5 ff-roboto">Tasky is a simple to-do list for small companies or teams<br class="d-xl-block d-none"> who work on daily scrums and have regular stand-ups! :)</p>
             <div class="d-flex justify-content-center m-0">
-                <svg width="853" height="447" viewBox="0 0 853 447" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <svg class="mb-5" viewBox="0 0 853 447" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect width="852.5" height="447" fill="url(#pattern0)"/>
                     <defs>
                     <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -24,9 +24,9 @@
             </div>
         </div>
     </div>
-    <div class="col-lg-5 auth auth-end py-5 py-lg-0">
+    <div class="col-xl-5 auth auth-end py-5 py-xl-0">
         <div class="d-flex justify-content-center align-items-center h-100 w-100">
-            <div class="col-10 col-lg-8">
+            <div class="col-10 col-xl-8">
                 <h2 class="text-center ff-baloo mb-5">
                     Login
                 </h2>
