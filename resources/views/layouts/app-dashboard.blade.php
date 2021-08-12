@@ -18,19 +18,22 @@
 </head>
 <body>
     @include('layouts.dashboard.navbar')
-    <div class="d-flex dashboard">
-        <div class="sidebar text-white">
-            <div class="sidebar-bg w-100 h-100 position-absolute"></div>
-            <div class="sidebar-content p-3 overflow-auto position-relative">
-                @include('layouts.dashboard.sidebar')
+    <div class="container-fluid mx-0 px-0">
+        <div class="d-flex w-100 dashboard">
+            <div class="sidebar text-white" id="sidebar">
+                <div class="sidebar-bg w-100 h-100 position-absolute"></div>
+                <div class="sidebar-content p-3 position-relative text-nowrap h-100">
+                    @include('layouts.dashboard.sidebar')
+                </div>
             </div>
-        </div>
-        <div class="content p-3">
-            @yield('content')
-        </div>
+            <div class="content p-3">
+                @yield('content')
+            </div>
+        </div>    
     </div>
     <script src="{{ asset('assets/js') }}/popper.min.js"></script>
     <script src="{{ asset('assets/js') }}/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="{{ asset('assets/js') }}/script.js"></script>
 </body>
 </html>

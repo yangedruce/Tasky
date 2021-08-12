@@ -1,6 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #0C0B0B;
+    font-size: 13px;
 }
 
 .ff-baloo {
@@ -56,19 +57,47 @@ body {
     padding-top: 56px;
 
     @media (min-width: 1200px) {
-        padding-top: 122px;
+        padding-top: 0;
     }
 }
 
 .sidebar {
     height: calc(100vh - 56px);
-    width: 275px;
     position: fixed;
     z-index: 100;
+    width: 0;
+    transition: 0.15s ease-in-out;
+    font-size: 16px;
     
+    &.active {
+        width: 275px;
+    }
+
     .sidebar-bg {
         background: #0C0B0B;
-        border-bottom-right-radius: 50px;
-        border-top-right-radius: 50px;
+    }
+
+    .sidebar-content {
+        overflow-x: hidden;
+    }
+
+    @media (min-width: 1200px) {
+        width: 20%;
+        height: 100vh;
+        position: relative;
+        z-index: initial;
+
+        .sidebar-bg {
+            border-bottom-right-radius: 50px;
+            border-top-right-radius: 50px;
+        }
+    }
+}
+
+.content {
+    width: 100%;
+    
+    @media (min-width: 1200px) {
+        width: 80%;
     }
 }
