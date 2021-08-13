@@ -1,3 +1,40 @@
+.bg-grey {
+  background-color: #F5F5F7;
+}
+
+.text-green {
+  color: #78EEBD;
+}
+
+.main-box {
+  border-radius: 14px;
+}
+
+.dropdown-box {
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.avatar {
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
+  height: 50px;
+  width: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.add-button {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid #0C0B0B;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #0C0B0B;
@@ -40,10 +77,12 @@ body {
 .navbar {
   background: #0C0B0B;
   z-index: 200;
+  width: 100%;
 }
 @media (min-width: 1200px) {
   .navbar {
     background: transparent;
+    width: initial;
   }
   .navbar .navbar-brand {
     font-size: 64px;
@@ -61,7 +100,6 @@ body {
 
 .sidebar {
   height: calc(100vh - 56px);
-  position: fixed;
   z-index: 100;
   width: 0;
   transition: 0.15s ease-in-out;
@@ -80,7 +118,6 @@ body {
   .sidebar {
     width: 20%;
     height: 100vh;
-    position: relative;
     z-index: initial;
   }
   .sidebar .sidebar-bg {
@@ -91,9 +128,11 @@ body {
 
 .content {
   width: 100%;
+  height: 500vh;
 }
 @media (min-width: 1200px) {
   .content {
     width: 80%;
+    margin-left: 20%;
   }
 }/*# sourceMappingURL=style.css.map */

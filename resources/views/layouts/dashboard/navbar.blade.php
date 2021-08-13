@@ -1,4 +1,4 @@
-<nav class="navbar position-fixed w-100">
+<nav class="navbar position-fixed">
     <div class="container-fluid">
         <a href="#" class="navbar-brand ff-baloo text-white mx-xl-3">TASKY.</a>
         <button class="btn d-xl-none" onclick="toggleSidebar()">

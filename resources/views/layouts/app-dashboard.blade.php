@@ -20,13 +20,13 @@
     @include('layouts.dashboard.navbar')
     <div class="container-fluid mx-0 px-0">
         <div class="d-flex w-100 dashboard">
-            <div class="sidebar text-white" id="sidebar">
+            <div class="sidebar text-white position-fixed" id="sidebar">
                 <div class="sidebar-bg w-100 h-100 position-absolute"></div>
                 <div class="sidebar-content p-3 position-relative text-nowrap h-100">
                     @include('layouts.dashboard.sidebar')
                 </div>
             </div>
-            <div class="content p-3">
+            <div class="content py-3">
                 @yield('content')
             </div>
         </div>    
