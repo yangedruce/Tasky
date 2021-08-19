@@ -9,7 +9,7 @@ use DB;
 
 class TeamController extends Controller
 {
-    public function teammembers(Request $request)
+    public function viewTeamMembers(Request $request)
     {
         return view('team.team-members');
     }

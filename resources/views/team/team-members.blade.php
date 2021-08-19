@@ -5,6 +5,20 @@
 @endsection
 
 @section('content')
+<div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="border: none; border-radius: 0;">
+            <div class="modal-body p-4">
+                <img src="" alt="">
+                <h5 class="modal-title text-dark ff-baloo fs-4" id="addModalLabel">Add members to Team</h5>
+                <p class="text-dark ff-roboto fs-6">Invite member by email address</p>
+                <a href="#">
+                    <button type="submit" data-bs-toggle="modal" data-bs-target="#confirmInviteModal" class="btn btn-main text-white bg-dark mt-3 fs-6 main-button px-4 py-2 ff-roboto fw-bold">Send invite</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="d-flex position-fixed align-items-center end-0 bottom-0 mb-3 mb-md-5 me-3 me-md-5">
     <div class="d-block me-3">
         <p class="fs-6 mb-0 text dark">Add members</p>
@@ -15,20 +29,6 @@
                 <path d="M 11 3 L 11 11 L 3 11 L 3 13 L 11 13 L 11 21 L 13 21 L 13 13 L 21 13 L 21 11 L 13 11 L 13 3 L 11 3 z"></path>
             </svg>
         </button>
-    </div>
-    <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content" style="border: none; border-radius: 0;">
-                <div class="modal-body p-4">
-                    <img src="" alt="">
-                    <h5 class="modal-title text-dark ff-baloo fs-4" id="addModalLabel">Add members to Team</h5>
-                    <p class="text-dark ff-roboto fs-6">Invite member by email address</p>
-                    <a href="#">
-                        <button type="submit" data-bs-toggle="modal" data-bs-target="#confirmInviteModal" class="btn btn-main text-white bg-dark mt-3 fs-6 main-button px-4 py-2 ff-roboto fw-bold">Send invite</button>
-                    </a>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 <div class="container px-xl-5">

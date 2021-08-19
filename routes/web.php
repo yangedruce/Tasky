@@ -33,7 +33,7 @@ Route::middleware(['auth', 'verified'])->group(function (){
     Route::view('/two-factor-authentication/toggle', 'profile.toggle-two-factor-authentication')->name('two-factor-authentication.toggle');
 
     //Team
-    Route::get('/team/team-members', 'App\Http\Controllers\TeamController@teammembers')->name('team.team-members');
+    Route::get('/team/team-members', 'App\Http\Controllers\TeamController@viewTeamMembers')->name('team.view-team-members');
 });
 
 //Send two factor recovery codes email
