@@ -14,9 +14,10 @@ class CreateTeamMembersTable extends Migration
     public function up()
     {
         Schema::create('team_members', function (Blueprint $table) {
-            $table->id('team_id');
-            $table->id('user_id');
-            $table->id('role_id');
+            $table->id();
+            $table->integer('team_id');
+            $table->integer('user_id');
+            $table->integer('role_id');
             $table->timestamps();
         });
     }

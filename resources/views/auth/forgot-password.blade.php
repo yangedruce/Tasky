@@ -11,7 +11,7 @@
         <div class="mx-5 mt-5 auth-content position-relative">
             <h1 class="display-1 ff-baloo">Forgot password</h1>
             <p class="mb-5 ff-roboto">Please enter your email address. You will receive a link to create a new password via email.</p>
-            <div class="d-flex justify-content-center m-0">
+            <div class="d-flex justify-content-center align-items-center m-0">
                 <svg class="mb-5" viewBox="0 0 853 447" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect width="852.5" height="447" fill="url(#pattern0)"/>
                     <defs>

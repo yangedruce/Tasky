@@ -11,7 +11,7 @@
         <div class="mx-5 mt-5 auth-content position-relative">
             <h1 class="display-1 ff-baloo">Task manager for<br class="d-xl-block d-none"> small teams</h1>
             <p class="mb-3 ff-roboto">Tasky is a simple to-do list for small companies or teams<br class="d-xl-block d-none"> who work on daily scrums and have regular stand-ups! :)</p>
-            <div class="d-flex justify-content-center m-0">
+            <div class="d-flex justify-content-center align-items-center m-0">
                 <svg class="mb-3" viewBox="0 0 853 447" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect width="852.5" height="447" fill="url(#pattern0)"/>
                     <defs>
