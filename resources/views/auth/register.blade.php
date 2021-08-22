@@ -41,15 +41,23 @@
                 @if(session('status')) 
                     <div class="fw-bold text-success">{{ session('status') }}</div>
                 @endif
-                <form action="{{ url('login') }}" method="POST">
+                <form action="{{ url('register') }}" method="POST">
                     @csrf
                     <div class="form-floating mt-3 mb-3">
+                        <input type="text" class="form-control custom-form" id="inputName" name="name" placeholder="{{ __('Enter name') }}" value="{{ old('name') }}" required>
+                        <label for="inputName" class="form-label">{{ __('Name') }}</label>
+                    </div>
+                    <div class="form-floating mb-3">
                         <input type="email" class="form-control custom-form" id="inputEmail" name="email" placeholder="{{ __('Enter email address') }}" value="{{ old('email') }}" required>
                         <label for="inputEmail" class="form-label">{{ __('Email address') }}</label>
                     </div>
                     <div class="form-floating mb-3">
                         <input type="password" class="form-control custom-form" id="inputPassword" name="password" placeholder="{{ __('Enter password') }}" required>
                         <label for="inputPassword" class="form-label">{{ __('Password') }}</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control custom-form" id="inputConfirmPassword" name="password_confirmation" placeholder="{{ __('Enter password') }}" required>
+                        <label for="inputConfirmPassword" class="form-label">{{ __('Confirm Password') }}</label>
                     </div>
                     <div class="d-flex justify-content-end">
                         <a href="{{ route('login') }}" class="text-decoration-none text-dark fw-bold"><span class="me-3 fw-bold">{{ __('Already have an account?') }}</span><svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">

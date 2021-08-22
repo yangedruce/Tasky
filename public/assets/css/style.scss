@@ -1,6 +1,25 @@
 $grey: #F5F5F7;
 $green: #78EEBD;
 
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+select:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none !important;
+    box-shadow: none !important;
+}
+
 .bg-grey {
     background-color: $grey;
 }

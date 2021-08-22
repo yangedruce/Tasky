@@ -38,7 +38,7 @@
                 @if(session('status'))            
                     <div class="fw-bold text-success">{{ __('A new password reset link has been sent to your email address.') }}</div>
                 @endif
-                <form action="{{ url('login') }}" method="POST">
+                <form action="{{ url('password.request') }}" method="POST">
                     @csrf
                     <div class="form-floating mt-3 mb-3">
                         <input type="email" class="form-control custom-form" id="inputEmail" name="email" placeholder="{{ __('Enter email address') }}" value="{{ old('email') }}" required>

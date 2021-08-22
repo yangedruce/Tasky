@@ -42,11 +42,7 @@ class FortifyServiceProvider extends ServiceProvider
         RateLimiter::for('login', function (Request $request) {
             return Limit::perMinute(5)->by($request->email.$request->ip());
         });
-
-        RateLimiter::for('two-factor', function (Request $request) {
-            return Limit::perMinute(5)->by($request->session()->get('login.id'));
-        });
-
+        
         Fortify::loginView(function () {
             return view('auth.login');
         });
@@ -78,10 +74,6 @@ class FortifyServiceProvider extends ServiceProvider
         
         Fortify::confirmPasswordView(function () {
             return view('auth.confirm-password');
-        });
-
-        Fortify::twoFactorChallengeView(function () {
-            return view('auth.two-factor-challenge');
         });
     }
 }

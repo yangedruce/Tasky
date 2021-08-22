@@ -29,12 +29,7 @@ Route::middleware(['auth', 'verified'])->group(function (){
     //Edit password page
     Route::view('/password/edit', 'profile.edit-password')->name('password.edit');
 
-    //Toggle two factor authentication page
-    Route::view('/two-factor-authentication/toggle', 'profile.toggle-two-factor-authentication')->name('two-factor-authentication.toggle');
-
     //Team
-    Route::get('/team/team-members', 'App\Http\Controllers\TeamController@viewTeamMembers')->name('team.view-team-members');
+    Route::get('/team/view/members', 'App\Http\Controllers\TeamController@viewTeamMembers')->name('team.view-team-members');
 });
 
-//Send two factor recovery codes email
-Route::post('/user/two-factor-recovery-codes/email', 'App\Http\Controllers\EmailController@sendTwoFactorRecoveryCodes')->name('two-factor-recovery-codes.send');
