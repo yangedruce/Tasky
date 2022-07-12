@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\TeamMemberController;
+use App\Http\Controllers\TasksController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,24 +15,14 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/team/index', [TeamMemberController::class, 'index'])->name('team.index');
+
+Route::get('/task/index', [TasksController::class, 'index'])->name('tasks.index');
+
+Route::get('/profile/index', [ProfileController::class, 'index'])->name('profile.index');
 
 Route::get('/', function () {
-    return view('home');
-});
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
 
-//Group routes to go through auth & verified middlewares
-Route::middleware(['auth', 'verified'])->group(function (){
-
-    //Home page
-    Route::view('/home', 'home')->name('home');
-
-    //Edit profile page
-    Route::view('/profile/edit', 'profile.edit-profile')->name('profile.edit');
-
-    //Edit password page
-    Route::view('/password/edit', 'profile.edit-password')->name('password.edit');
-
-    //Team
-    Route::get('/team/view/members', 'App\Http\Controllers\TeamController@viewTeamMembers')->name('team.view-team-members');
-});
-
+require __DIR__.'/auth.php';
