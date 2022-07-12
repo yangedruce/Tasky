@@ -1,0 +1,2 @@
+<label for="task-input-date" class="text-base ff-baloo mb-3">Set dateline:</label>
+<input type="date" name="task-input-date" class="w-full bg-gray-100 rounded-md border-2 border-gray-900 text-gray-900 text-xs">

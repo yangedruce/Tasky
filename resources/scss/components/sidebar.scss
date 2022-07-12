@@ -1,0 +1,30 @@
+.sidebar {
+    height: calc(100vh - 56px);
+    z-index: 100;
+    width: 0;
+    transition: 0.15s ease-in-out;
+    font-size: 16px;
+    
+    &.active {
+        width: 275px;
+    }
+
+    .sidebar-bg {
+        background: #0C0B0B;
+    }
+
+    .sidebar-content {
+        overflow-x: hidden;
+    }
+
+    @media (min-width: 1200px) {
+        width: 20%;
+        height: 100vh;
+        z-index: initial;
+
+        .sidebar-bg {
+            border-bottom-right-radius: 50px;
+            border-top-right-radius: 50px;
+        }
+    }
+}
