@@ -29,7 +29,7 @@
         </div>
     </x-slot>
 
-    <div class="py-12">
+    <div class="py-8">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-3">

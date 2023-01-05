@@ -1,7 +1,7 @@
 <form action="">
     @csrf
     
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
         <div class="relative group z-0 w-full">
             <x-label for="name" :value="__('Name')" class="text-sm ff-baloo"></x-label>
             <x-input id="name" class="block w-full" type="text" name="name" :value="old('name')" autofocus />

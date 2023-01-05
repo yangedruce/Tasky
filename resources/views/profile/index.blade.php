@@ -29,11 +29,11 @@
         </div>
     </x-slot>
 
-    <div class="py-12">
+    <div class="py-8">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden">
                 <div class="grid grid-cols-1 xl:grid-cols-2 gap-3">
-                    <div class="relative h-full">
+                    <div class="relative h-full pb-8 md:pb-0">
                         <div class="flex items-center justify-center">
                             <img src="{{ asset('img/profile.png') }}" alt="profile" class="h-72 mt-12 mb-4">
                         </div>
@@ -44,8 +44,8 @@
                         </p>
                     </div>
 
-                    <div class="relative mt-12 xl:mt-0">
-                        <div class="flex items-center w-full mb-12">
+                    <div class="relative mt-4 xl:mt-0">
+                        <div class="flex items-center w-full pb-4">
                             <img src="{{ asset('img/avatar.png') }}" alt="profile picture" class="h-16 w-16 md:h-24 md:w-24 lg:h-auto lg:w-auto">
 
                             <div x-data="{ open: false }" class="flex items-center ml-4 w-full justify-between">

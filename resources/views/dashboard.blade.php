@@ -40,7 +40,7 @@
         </div>
     </x-slot>
 
-    <div class="py-12">
+    <div class="py-8">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden">
                 {{-- <div class="absolute origin-top-right mr-8 bottom-0 right-0 top-4 z-10">
